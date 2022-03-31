@@ -78,7 +78,7 @@ namespace BigSchool.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser() { UserName = model.UserName, Name=model.Name };
+                var user = new ApplicationUser() { UserName = model.UserName, Name=model.Name, PasswordHash = model.Password };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

@@ -31,7 +31,7 @@ namespace BigSchool.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "User name")]
+        [Display(Name = "UserName")]
         public string UserName { get; set; }
 
         [Required]
@@ -46,7 +46,7 @@ namespace BigSchool.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "User name")]
+        [Display(Name = "Username")]
         public string UserName { get; set; }
 
         [Required]
